@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile • Sapphic Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Sapphic Space</span></a>
+        <nav>
+          <a href="dashboard.html">Back to browse</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="container section">
+        <div class="profile-header card fade-in" id="profileHeader">
+          <div class="row">
+            <img id="profilePic" class="pic" alt="Profile photo" />
+            <div>
+              <div class="title" id="profileName"></div>
+              <div class="subtitle" id="profileMeta"></div>
+            </div>
+          </div>
+          <div class="socials" id="socialLinks"></div>
+        </div>
+
+        <div class="grid mt-32" style="grid-template-columns: 1.1fr 0.9fr; gap: 20px;">
+          <div class="card p-24">
+            <h3>About</h3>
+            <p id="profileBio" class="help" style="color:#e9def1"></p>
+          </div>
+          <div class="card p-24">
+            <h3>Interests</h3>
+            <div id="profileInterests" class="tags mt-24"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2025 Sapphic Space</div></footer>
+  </div>
+
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/viewProfile.js"></script>
+</body>
+</html>

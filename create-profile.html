@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create Profile • Sapphic Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Sapphic Space</span></a>
+        <nav>
+          <a href="dashboard.html">Back</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="container section">
+        <div class="card p-24 fade-in" style="max-width:900px;margin:0 auto;">
+          <h2>Create your profile</h2>
+          <p class="help">Share a little about yourself.</p>
+          <form id="profileForm" class="form mt-24" novalidate>
+            <div class="form-row grid-2">
+              <div>
+                <label class="label" for="name">Name</label>
+                <input id="name" class="input" required />
+              </div>
+              <div>
+                <label class="label" for="age">Age</label>
+                <input id="age" type="number" min="18" class="input" required />
+              </div>
+            </div>
+
+            <div class="form-row grid-2">
+              <div>
+                <label class="label" for="city">City</label>
+                <input id="city" class="input" />
+              </div>
+              <div>
+                <label class="label" for="country">Country</label>
+                <input id="country" class="input" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="label" for="bio">Short bio</label>
+              <textarea id="bio" rows="4" class="input" placeholder="What should people know about you?"></textarea>
+            </div>
+
+            <div class="form-row grid-3">
+              <div>
+                <label class="label" for="facebook">Facebook</label>
+                <input id="facebook" class="input" placeholder="https://facebook.com/you" />
+              </div>
+              <div>
+                <label class="label" for="instagram">Instagram</label>
+                <input id="instagram" class="input" placeholder="https://instagram.com/you" />
+              </div>
+              <div>
+                <label class="label" for="snapchat">Snapchat</label>
+                <input id="snapchat" class="input" placeholder="https://snapchat.com/add/you" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="label" for="interests">Choose interests</label>
+              <div id="interests" class="tags"></div>
+            </div>
+
+            <div class="form-row">
+              <label class="label" for="photo">Profile photo</label>
+              <input id="photo" type="file" accept="image/*" class="input" />
+              <div class="mt-24">
+                <img id="preview" alt="Preview" style="max-width:160px;border-radius:16px;display:none;border:1px solid var(--border)" />
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Save profile</button>
+            <div class="error" id="formError"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2025 Sapphic Space</div></footer>
+  </div>
+
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/createProfile.js"></script>
+</body>
+</html>

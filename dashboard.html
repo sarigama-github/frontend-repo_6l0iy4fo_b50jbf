@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard • Sapphic Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Sapphic Space</span></a>
+        <nav>
+          <a href="create-profile.html" class="btn btn-outline">Create Profile</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="container section">
+        <h2>Discover the community</h2>
+        <p class="help">Search and filter to find your vibe.</p>
+        <div class="card p-16 mt-24">
+          <div class="searchbar">
+            <input id="search" class="input" placeholder="Search by name or interests..."/>
+            <select id="ageFilter" class="input">
+              <option value="">Any age</option>
+              <option value="18-24">18–24</option>
+              <option value="25-34">25–34</option>
+              <option value="35-44">35–44</option>
+              <option value="45+">45+</option>
+            </select>
+            <select id="countryFilter" class="input">
+              <option value="">Any country</option>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+              <option>Australia</option>
+              <option>Germany</option>
+              <option>France</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cards mt-24" id="cards"></div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2025 Sapphic Space</div></footer>
+  </div>
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/dashboard.js"></script>
+</body>
+</html>

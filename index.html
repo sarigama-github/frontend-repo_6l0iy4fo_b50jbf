@@ -1,18 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flames App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sapphic Space • Find Your People</title>
+  <meta name="description" content="A modern community to connect lesbian and sapphic women. Create a profile, browse matches, and say hi – all in your browser.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-logo"></span>
+          <span class="brand-name">Sapphic Space</span>
+        </a>
+        <nav>
+          <a href="login.html">Log in</a>
+          <a href="signup.html" class="btn btn-primary">Join</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero fade-in">
+        <div class="container hero-inner">
+          <h1>Where women meet women—warm, safe, and real.</h1>
+          <p>Join a caring community built for lesbian and sapphic women. Create a profile, discover kindred spirits, and connect authentically.</p>
+          <div class="hero-cta">
+            <a href="signup.html" class="btn btn-primary">Join Community</a>
+            <a href="dashboard.html" class="btn btn-outline">Explore Profiles</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <h2>Why you'll love it</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px,1fr));">
+          <div class="card p-24 hover-grow">
+            <h3>Feminine & inviting</h3>
+            <p class="help">Soft gradients and glassy cards create a soothing, modern vibe.</p>
+          </div>
+          <div class="card p-24 hover-grow">
+            <h3>Your pace</h3>
+            <p class="help">Browse, favorite, and say hi when you’re ready. No pressure.</p>
+          </div>
+          <div class="card p-24 hover-grow">
+            <h3>Privacy-first</h3>
+            <p class="help">All data stays in your browser via localStorage. No servers.</p>
+          </div>
+        </div>
+        <div class="center mt-48">
+          <a href="signup.html" class="btn btn-primary">Create your free account</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Made with love for the sapphic community • © 2025 Sapphic Space</div>
+    </footer>
+  </div>
+  <script src="/scripts/utils.js"></script>
+</body>
 </html>
